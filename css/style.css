@@ -1,0 +1,81 @@
+#moodForm {
+  max-width: 680px;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+#moodForm fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+#moodForm legend {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+#moodForm label {
+  display: block;
+  margin: 0.45rem 0;
+  color: #183a56;
+}
+input[type="text"],
+#moodForm select,
+#moodForm textarea,
+.inputDate,
+.inputText {
+  width: 100%;
+  max-width: 420px;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid rgba(24, 58, 86, 0.12);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03) inset;
+  font-size: 1rem;
+  background: #fff;
+}
+.textareaStyle {
+  min-height: 80px;
+  resize: vertical;
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid rgba(24, 58, 86, 0.15);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  color: #3b5a57;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Tabla de entradas */
+#entries table {
+  width: 100%;
+  max-width: 900px;
+  border-collapse: collapse;
+  margin-top: 0.8rem;
+}
+#entries th,
+#entries td {
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+#entries tbody tr:nth-child(odd) {
+  background: rgba(24, 74, 111, 0.03);
+}
+#entries .btn.del {
+  padding: 0.25rem 0.5rem;
+  background: #c94a4a;
+}
+/* Responsive */
+@media (max-width: 600px) {
+  #moodForm input[type="date"],
+  #moodForm input[type="text"],
+  #moodForm select,
+  #moodForm textarea {
+    max-width: 100%;
+  }
+  #entries table {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios - Salud mental y emocional</title>
+    <link
+      href="../css/layout.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <style>
+      /* Pequeño estilo local para la animación de respiración */
+      .breath-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+      .circle {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        background: rgba(80, 140, 200, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 4s ease-in-out;
+        border: 4px solid rgba(80, 140, 200, 0.35);
+      }
+      .circle.small {
+        transform: scale(0.6);
+      }
+      .circle.large {
+        transform: scale(1.15);
+      }
+      .breath-label {
+        font-weight: 700;
+      }
+      .controls .btn {
+        margin-right: 0.5rem;
+      }
+    </style>
+  </head>
+  <body id="top">
+    <div
+      class="bgded overlay"
+      style="background-image: url('../images/landpage.jpg')"
+    >
+      <div class="wrapper row0">
+        <div id="topbar" class="hoc clear">
+          <p class="fl_left nospace">
+            <i class="fas fa-phone"></i> Llámanos: +57 (604) 444 48 91
+          </p>
+          <p class="fl_right nospace">
+            <a class="btn" href="contact.html">Contáctanos</a>
+          </p>
+        </div>
+      </div>
+      <div class="wrapper row1">
+        <header id="header" class="hoc clear">
+          <div id="logo" class="fl_left">
+            <h1><a href="../index.html">Salud mental y emocional</a></h1>
+          </div>
+          <nav id="mainav" class="fl_right">
+            <ul class="clear">
+              <li><a href="consejos.html">Consejos</a></li>
+              <li class="active"><a href="exercises.html">Ejercicios</a></li>
+              <li><a href="mood-tracker.html">Registrar Estado</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <div id="breadcrumb" class="hoc clear">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="consejos.html">Ejercicios</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrapper row3">
+      <main class="hoc container clear">
+        <div class="content">
+          <h6 class="heading">Ejercicios prácticos</h6>
+          <p class="btmspace-30">
+            Aquí encontrarás ejercicios simples y prácticos para ayudar a
+            reducir la ansiedad, mejorar el enfoque y apoyar tu bienestar
+            emocional.
+          </p>
+
+          <section>
+            <h6 class="heading">Respiración guiada (4-4-4)</h6>
+            <div class="breath-box">
+              <div id="circle" class="circle small">
+                <span id="count" style="font-size: 1.2rem; color: #184a6f"
+                  >4</span
+                >
+              </div>
+              <div class="breath-label" id="breathLabel">Inicia</div>
+              <div class="controls">
+                <button class="btn" id="startBtn">Iniciar</button>
+                <button class="btn inverse" id="stopBtn">Detener</button>
+              </div>
+              <p class="small">
+                Sigue el círculo: inhala (4s), mantiene (4s), exhala (4s).
+                Repite 4 veces.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h6 class="heading">Ejercicio de enfoque: 5-4-3-2-1</h6>
+            <p class="btmspace-30">
+              Técnica de grounding para volver al presente. Enumera mentalmente:
+              5 cosas que ves, 4 que tocas, 3 que escuchas, 2 que hueles, 1 que
+              saboreas.
+            </p>
+          </section>
+
+          <section>
+            <h6 class="heading">Micro-meditación (2 minutos)</h6>
+            <p>
+              Siéntate cómodo, cierra los ojos y pon tu atención en la
+              respiración. Si lo deseas, cierra los ojos durante 2 minutos y
+              escucha tu respiración.
+            </p>
+          </section>
+        </div>
+        <div class="clear"></div>
+      </main>
+    </div>
+
+<!-- Bottom Background Image Wrapper -->
+    <div
+      class="bgded overlay"
+      style="background-image: url('../images/footer.jpg')"
+    >
+      <!-- ################################################################################################ -->
+      <div class="wrapper row4">
+        <footer id="footer" class="hoc clear">
+          <div class="group btmspace-30">
+            <div class="one_half first">
+              <h6 class="heading">Salud mental y emocional</h6>
+              <p>
+                Un espacio con recursos y herramientas prácticas para
+                acompañarte en tu bienestar emocional. Respetamos tu privacidad:
+                los datos se guardan localmente a menos que indiques lo
+                contrario.
+              </p>
+              <form
+                action="#"
+                method="post"
+                style="margin-top: 12px; max-width: 320px"
+              >
+                <fieldset>
+                  <legend>Suscríbete al newsletter</legend>
+                  <input
+                    class="btmspace-15"
+                    type="text"
+                    name="name"
+                    value=""
+                    placeholder="Nombre (opcional)"
+                  />
+                  <input
+                    class="btmspace-15"
+                    type="email"
+                    name="email"
+                    value=""
+                    placeholder="Email"
+                    required
+                  />
+                  <button class="btn" type="submit" value="submit">
+                    Suscribirme
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+            <div class="one_half">
+              <h6 class="heading">Enlaces rápidos</h6>
+              <ul class="nospace linklist">
+                <li><a href="pages/consejos.html">Consejos</a></li>
+                <li><a href="pages/exercises.html">Ejercicios</a></li>
+                <li><a href="pages/mood-tracker.html">Registrar estado</a></li>
+                <li><a href="pages/contact.html">Contacto y recursos</a></li>
+              </ul>
+              <ul class="faico clear" style="margin-top: 12px">
+                <li>
+                  <a class="faicon-facebook" href="#"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="faicon-linkedin" href="#"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="faicon-twitter" href="#"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+      <div class="wrapper row5">
+        <div id="copyright" class="hoc clear">
+          <!-- ################################################################################################ -->
+          <p class="fl_left">
+            Copyright &copy; 2018 - All Rights Reserved -
+            <a href="#">Domain Name</a>
+          </p>
+          <p class="fl_right">
+            Template by
+            <a
+              target="_blank"
+              href="https://www.os-templates.com/"
+              title="Free Website Templates"
+              >OS Templates</a
+            >
+          </p>
+          <!-- ################################################################################################ -->
+        </div>
+      </div>
+    </div>
+    <!-- End Bottom Background Image Wrapper -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/exercises.js"></script>
+  </body>
+</html>
